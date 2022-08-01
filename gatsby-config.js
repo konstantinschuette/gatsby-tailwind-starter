@@ -1,7 +1,12 @@
+// eslint-disable-next-line no-undef
+const process = require('process')
+
 module.exports = {
   siteMetadata: {
-    title: 'no-typescript',
+    title: 'Gatsby Tailwind Starter',
+    description: 'Test description',
     siteUrl: 'https://www.yourdomain.tld',
+    image: '/icon.png',
   },
   plugins: [
     'gatsby-plugin-sass',
@@ -18,19 +23,10 @@ module.exports = {
       resolve: 'gatsby-plugin-sharp',
       options: {
         defaults: {
-          formats: [
-            'auto',
-            'webp',
-            'avif',
-          ],
+          formats: ['auto', 'webp', 'avif'],
           placeholder: 'dominantColor',
           quality: 50,
-          breakpoints: [
-            750,
-            1080,
-            1366,
-            1920,
-          ],
+          breakpoints: [750, 1080, 1366, 1920],
           backgroundColor: 'transparent',
           tracedSVGOptions: {},
           blurredOptions: {},
@@ -52,4 +48,4 @@ module.exports = {
     },
     'gatsby-plugin-postcss',
   ],
-};
+}

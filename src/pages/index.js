@@ -1,11 +1,11 @@
-import * as React from 'react';
+import * as React from 'react'
+import Seo from '../components/seo'
 
-function IndexPage() {
+export default function Index() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  );
+    <main>
+      <Seo />
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+    </main>
+  )
 }
-
-export default IndexPage;
