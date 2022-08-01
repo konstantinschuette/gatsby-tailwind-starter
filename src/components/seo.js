@@ -2,9 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 import { useLocation } from '@reach/router'
-import { useStaticQuery, graphql } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 
 const Seo = ({ title, description, image }) => {
+  const fontLink =
+    'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'
+
   const { pathname } = useLocation()
   const { site } = useStaticQuery(query)
   const { defaultTitle, defaultDescription, siteUrl, defaultImage } =
@@ -15,6 +18,7 @@ const Seo = ({ title, description, image }) => {
     image: `${siteUrl}${image || defaultImage}`,
     url: `${siteUrl}${pathname}`,
   }
+
   return (
     <Helmet
       htmlAttributes={{
@@ -37,6 +41,16 @@ const Seo = ({ title, description, image }) => {
         <meta name="twitter:description" content={seo.description} />
       )}
       {seo.image && <meta name="twitter:image" content={seo.image} />}
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+      <link rel="preload" as="style" href={fontLink} />
+      <link
+        rel="stylesheet"
+        href={fontLink}
+        media="print"
+        onload="this.media='all'"
+      />
     </Helmet>
   )
 }

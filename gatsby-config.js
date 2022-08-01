@@ -1,6 +1,3 @@
-// eslint-disable-next-line no-undef
-const process = require('process')
-
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Tailwind Starter',
