@@ -1,12 +1,20 @@
 {
   "ci": {
+    "collect": {
+      "staticDistDir": "./public",
+      "url": ["http://localhost/", "http://localhost/404/"]
+    },
     "assert": {
       "preset": "lighthouse:no-pwa",
       "assertions": {
+        "categories:pwa": "off",
         "categories:performance": ["error", {"minScore": 1}],
         "categories:accessibility": ["error", {"minScore": 1}],
         "categories:best-practices": ["error", {"minScore": 1}],
-        "categories:seo": ["error", {"minScore": 1}]
+        "categories:seo": ["error", {"minScore": 1}],
+        "unused-javascript": "off",
+        "legacy-javascript": "off",
+        "csp-xss": "off"
       }
     }
   }
