@@ -44,5 +44,11 @@ module.exports = {
       __key: 'images',
     },
     'gatsby-plugin-postcss',
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
   ],
 }
