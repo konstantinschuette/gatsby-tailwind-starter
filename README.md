@@ -1,6 +1,7 @@
 ## 🚀 How to use
 
-1. Replace Google Font [here](https://github.com/konstantinschuette/gatsby-tailwind-starter/blob/main/src/components/seo.js#L8)
+1. Replace the Montserrat Font with your own font [here](https://github.com/konstantinschuette/gatsby-tailwind-starter/blob/main/src/components/seo.js#L8)
+2. Adapt the [lighthouse CI scores](https://github.com/konstantinschuette/gatsby-tailwind-starter/blob/main/.github/workflows/assertions.json) to your needings. I would recommend lowering the "performance" score only
 
 
 ## Fonts
