@@ -2,6 +2,7 @@
 
 1. Replace the Montserrat Font with your own font [here](https://github.com/konstantinschuette/gatsby-tailwind-starter/blob/main/src/components/seo.js#L8)
 2. Adapt the [lighthouse CI scores](https://github.com/konstantinschuette/gatsby-tailwind-starter/blob/main/.github/workflows/assertions.json) to your needings. I would recommend lowering the "performance" score only
+3. If you use NPM instead of Yarn, then adapt the [CI job](https://github.com/konstantinschuette/gatsby-tailwind-starter/blob/main/.github/workflows/ci.yml)
 
 
 ## Fonts
