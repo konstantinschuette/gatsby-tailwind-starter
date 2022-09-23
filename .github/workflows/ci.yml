@@ -1,13 +1,20 @@
 name: CI
 on: [push]
 jobs:
-  lighthouseci:
+  lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: 14
-      - run: yarn install && yarn global add @lhci/cli@0.8.x
-      - run: npm run build
-      - run: lhci autorun --config=.github/workflows/assertions.json --upload.target=temporary-public-storage
+          node-version: '16'
+          cache: 'yarn'
+
+      - name: Install project dependencies
+        run: yarn --prefer-offline && yarn global add @lhci/cli
+        
+      - name: Build project
+        run: yarn run build
+        
+      - name: Run lighthouse
+        run: lhci autorun --config=.github/workflows/assertions.json --upload.target=temporary-public-storage
