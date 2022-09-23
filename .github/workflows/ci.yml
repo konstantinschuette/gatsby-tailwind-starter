@@ -12,7 +12,7 @@ jobs:
           cache: 'yarn'
 
       - name: Install project dependencies
-        run: yarn --prefer-offline && yarn global add @lhci/cli@latest
+        run: yarn --frozen-lockfile --prefer-offline && yarn global add @lhci/cli@latest
         
       - name: Build project
         run: yarn run build
