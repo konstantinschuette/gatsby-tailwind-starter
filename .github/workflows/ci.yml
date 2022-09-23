@@ -4,12 +4,12 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '16'
           cache: 'yarn'
-          cache-dependency-path: './yarn.lock'
 
       - name: Install project dependencies
         run: yarn --prefer-offline && yarn global add @lhci/cli
