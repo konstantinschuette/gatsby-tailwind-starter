@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/18708105/192618663-7c0e11f1-86ad-45d5-b506-693bc94e08a6.png)
+
+
 ## 🚀 How to use
 
 1. Replace the Montserrat Font with your own font [here](https://github.com/konstantinschuette/gatsby-tailwind-starter/blob/main/src/components/seo.js#L8)
