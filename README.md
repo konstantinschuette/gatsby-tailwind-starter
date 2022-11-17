@@ -1,4 +1,5 @@
-![image](https://user-images.githubusercontent.com/18708105/192618663-7c0e11f1-86ad-45d5-b506-693bc94e08a6.png)
+<img width="815" alt="Bildschirm­foto 2022-11-17 um 18 33 25" src="https://user-images.githubusercontent.com/18708105/202517190-f3d69480-10c6-419c-bfd2-1f3a188e84b7.png">
+
 
 
 ## 🚀 How to use
