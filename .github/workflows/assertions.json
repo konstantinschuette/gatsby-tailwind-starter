@@ -2,7 +2,7 @@
   "ci": {
     "collect": {
       "staticDistDir": "./public",
-      "autodiscoverUrlBlocklist": ["http://localhost/404/index.html"]
+      "autodiscoverUrlBlocklist": ["http://localhost/404/index.html", "http://localhost/_gatsby/*"]
     },
     "assert": {
       "preset": "lighthouse:no-pwa",
