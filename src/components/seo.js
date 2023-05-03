@@ -5,9 +5,6 @@ import { useLocation } from '@reach/router'
 import { graphql, useStaticQuery } from 'gatsby'
 
 const Seo = ({ title, description, image }) => {
-  const fontLink =
-    'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'
-
   const { pathname } = useLocation()
   const { site } = useStaticQuery(query)
   const { defaultTitle, defaultDescription, siteUrl, defaultImage } =
@@ -44,13 +41,6 @@ const Seo = ({ title, description, image }) => {
 
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-      <link rel="preload" as="style" href={fontLink} />
-      <link
-        rel="stylesheet"
-        href={fontLink}
-        media="print"
-        onload="this.media='all'"
-      />
     </Helmet>
   )
 }
