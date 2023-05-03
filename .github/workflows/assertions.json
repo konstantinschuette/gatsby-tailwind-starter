@@ -14,7 +14,9 @@
         "categories:seo": ["error", {"minScore": 1}],
         "unused-javascript": "off",
         "legacy-javascript": "off",
-        "csp-xss": "off"
+        "csp-xss": "off",
+        "bf-cache": "off",
+        "valid-source-maps": "off"
       }
     }
   }
