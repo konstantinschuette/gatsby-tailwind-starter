@@ -1,6 +1,4 @@
-<img width="815" alt="Bildschirm­foto 2022-11-17 um 18 33 25" src="https://user-images.githubusercontent.com/18708105/202517190-f3d69480-10c6-419c-bfd2-1f3a188e84b7.png">
-
-
+<img width="802" alt="image" src="https://user-images.githubusercontent.com/18708105/236016245-429862b5-0009-4779-a8a1-839e665a0234.png">
 
 ## 🚀 How to use
 
